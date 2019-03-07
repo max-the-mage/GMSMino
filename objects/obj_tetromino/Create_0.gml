@@ -21,6 +21,7 @@ fall = false;
 mino_colour = global.mino_colours[? tetromino_type];
 
 horizontal_movement = 0;
+rotation_input = 0;
 
 //show_debug_message(all_pos);
 grid_update(all_pos, mino_colour);
