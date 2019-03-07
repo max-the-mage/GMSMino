@@ -2,46 +2,14 @@
 // You can write your code in this editor
 
 if(active && (fall || horizontal_movement != 0)) {
-	var lowest = 0;
-	var leftmost = 0;
-	var rightmost = 0;
-	var mino;
+	grid_update(all_pos, c_white);
 	
-	for(var i = 0; i < 4; i++) {
-		mino = all_pos[i];
+	fall_collision = check_collision(all_pos, [0, 1]);
 		
-		// leftmost x mino
-		if(mino[0] < leftmost) {
-			leftmost = mino[0];
-		}
-		
-		// rightmost x mino
-		if(mino[0] > rightmost) {
-			rightmost = mino[0];
-		}
-		
-		// lowest mino y
-		if(mino[1] > lowest) {
-			lowest = mino[1];
-		}
-	}
-	for(var i = 0; i < 4; i++) {
-		mino = all_pos[i];
-		
-		if(mino[1] == lowest && !fall_collision) {
-			fall_collision = check_collision(mino[0], mino[1] + 1);
-		}
-		
-		// only check left/right collision if horizontal movement is true
-		if(horizontal_movement != 0) {
-			if(mino[0] == rightmost && !right_collision) {
-				right_collision = check_collision(mino[0]+1, mino[1]);
-			}
-			
-			if(mino[0] == leftmost && !left_collision) {
-				left_collision = check_collision(mino[0]-1, mino[1])
-			}
-		}
+	// only check left/right collision if horizontal movement is true
+	if(horizontal_movement != 0) {
+		right_collision = check_collision(all_pos, [1, 0]);
+		left_collision = check_collision(all_pos, [-1, 0])
 	}
 	
 	
@@ -58,7 +26,6 @@ if(active && (fall || horizontal_movement != 0)) {
 		grid_pos[0] += horizontal_movement;
 	}
 	
-	grid_update(all_pos, c_white);
 	
 	all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
 	grid_update(all_pos, mino_colour);
