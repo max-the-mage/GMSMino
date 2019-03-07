@@ -3,3 +3,4 @@
 
 current_mino.horizontal_movement = -1;
 alarm[1] = room_speed / 3;
+alarm[2] = -1;
