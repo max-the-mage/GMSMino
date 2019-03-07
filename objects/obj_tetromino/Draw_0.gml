@@ -60,7 +60,7 @@ if(active && (fall || horizontal_movement != 0)) {
 	
 	grid_update(all_pos, c_white);
 	
-	all_pos = get_relative_minos(grid_pos, tetromino_type);
+	all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
 	grid_update(all_pos, mino_colour);
 	
 	fall = false;

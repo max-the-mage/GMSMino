@@ -1,5 +1,13 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.rotation_data = ds_map_create();
+global.rotation_data[? "I"] = [[[0, 0], [-1, 0], [+1, 0], [+2, 0]]];
+global.rotation_data[? "J"] = [[[0, 0], [-1, 0], [-1, -1], [+1, 0]]];
+global.rotation_data[? "L"] = [[[0, 0], [-1, 0], [+1, 0], [+1, -1]]];
+global.rotation_data[? "O"] = [[[0, 0], [+1, 0], [+1, -1], [0, -1]]];
+global.rotation_data[? "S"] = [[[0, 0], [-1, 0], [0, -1], [+1, -1]]];
+global.rotation_data[? "T"] = [[[0, 0], [-1, 0], [+1, 0], [0, -1]]];
+global.rotation_data[? "Z"] = [[[0, 0], [0, -1], [-1, -1], [+1, 0]]];
 
 globalvar level;
 globalvar points;
@@ -10,7 +18,6 @@ grav = (0.8-(level * 0.007))
 
 grav = power(grav, level)
 falling = true;
-update_tetromino_pos = 0;
 
 global.mino_colours = ds_map_create();
 global.mino_colours[? "I"] = c_aqua;

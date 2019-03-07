@@ -1,17 +1,23 @@
 var origin = argument0;
 var mino_type = argument1;
+var rotation = argument2;
 
 var xpos = origin[0]
 var ypos = origin[1]
 
-var mino_array;
+var full_mino = global.rotation_data[? mino_type];
+var rotated_mino = full_mino[rotation];
+var mino_array = [[0, 0], [0, 0], [0, 0], [0, 0]];
 
-
-switch(mino_type) {
-	case "I":
-		return [[xpos, ypos], [xpos-1, ypos], [xpos+1, ypos], [xpos+2, ypos]];
-	case "J":
-		return [[xpos, ypos], [xpos-1, ypos], [xpos-1, ypos-1], [xpos+1, ypos]];
-	case "L":
-		return [[xpos, ypos], [xpos-1, ypos], [xpos+1, ypos], [xpos+1, ypos-1]]
+for(var i = 0; i < 4; i++) {
+	var mino = rotated_mino[i];
+	var new_mino = mino_array[i];
+	
+	new_mino[0] = xpos + mino[0];
+	new_mino[1] = ypos + mino[1];
+	
+	mino_array[i] = new_mino;
 }
+
+return mino_array;
+	
