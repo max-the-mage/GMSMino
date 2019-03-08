@@ -24,10 +24,10 @@ if(falling) {
 	current_mino.fall = true; // move down one cell in grid (if collision does not occur)
 	
 	if(!current_mino.active) {
-		//for(var i = 0; i < 4; i++) {
-		//	var ya = current_mino.all_pos[i];
-		//	lineclear(ya[1]);
-		//}
+		for(var i = 0; i < 4; i++) {
+			var ya = current_mino.all_pos[i];
+			lineclear(ya[1]);
+		}
 		
 		
 		current_mino = instance_create_depth(0, 0, 1, obj_tetromino)
