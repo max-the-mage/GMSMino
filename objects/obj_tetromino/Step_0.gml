@@ -14,8 +14,10 @@ if(active && (fall || horizontal_movement != 0)) {
 	
 	
 	if(fall) {
-		if(fall_collision) {		
-			alarm[0] = room_speed * 0.5;
+		if(fall_collision) {
+			if(alarm[0] == -1) {
+				alarm[0] = room_speed * 0.5;
+			}
 		} else {
 			grid_pos[1] += 1;
 			alarm[0] = -1;
@@ -24,6 +26,7 @@ if(active && (fall || horizontal_movement != 0)) {
 	
 	if((horizontal_movement < 0 && !left_collision) || (horizontal_movement > 0 && !right_collision)) {
 		grid_pos[0] += horizontal_movement;
+		fall_collision = check_collision(all_pos, [0, 1]);
 	}
 	
 	

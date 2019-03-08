@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "51eb1afa-8e90-47ab-8d04-7bf1b14cdd53",
+            "Value": {
+                "id": "21df622c-3ef2-4c15-b143-b1883dbd2a6e",
+                "resourcePath": "scripts\\lineclear\\lineclear.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7a62d920-0901-44b7-ab59-1e250bfdc02b",
             "Value": {
                 "id": "99ff8cfd-a1ae-46f2-829a-2d938e345a03",
@@ -276,7 +284,8 @@
         "856f3679-59a1-4443-9d5e-44b7400c2e98",
         "2e6da567-e228-48b9-ae2c-8e131bc5b061",
         "ac7fb52d-4853-4104-8734-47e377c23a6f",
-        "f275b531-fad5-4727-98e6-ef000f23d366"
+        "f275b531-fad5-4727-98e6-ef000f23d366",
+        "197f422a-327f-4612-90b4-bdad34944877"
     ],
     "tutorial": ""
 }
