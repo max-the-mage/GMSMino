@@ -55,14 +55,17 @@ minos[| 6] = "L";
 next_pieces();
 
 globalvar level;
+globalvar lines ;
 globalvar points;
 
-level = 7;
+level = 1;
+lines = 0;
 points = 0;
-grav = (0.8-(level * 0.007))
+grav_multiplier = (0.8-(level * 0.007))
 
-grav = power(grav, level)
+grav = power(grav_multiplier, level)
 falling = true;
+soft_drop = false;
 
 global.mino_colours = ds_map_create();
 global.mino_colours[? "I"] = c_aqua;
