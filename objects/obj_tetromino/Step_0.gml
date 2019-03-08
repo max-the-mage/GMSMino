@@ -59,11 +59,8 @@ if(rotation_input != 0) {
 		grid_pos[1] += off[1];
 	
 		all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
-		grid_update(all_pos, mino_colour);
-		
-		if(alarm[0] != -1) {
-			alarm[0] = room_speed * 0.5;
-		}
+		grid_update(all_pos, mino_colour);	
+		alarm[0] = -1;
 	}
 	
 	rotation_input = 0;
