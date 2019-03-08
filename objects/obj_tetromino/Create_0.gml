@@ -8,7 +8,7 @@ grid_pos = [4, 2];
 image_xscale = global.grid_scale;
 image_yscale = global.grid_scale;
 
-tetromino_type = "J"
+tetromino_type = "O";
 all_pos = get_relative_minos(grid_pos, tetromino_type, 0);
 rotation = 0;
 active = true;

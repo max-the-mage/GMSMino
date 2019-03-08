@@ -38,6 +38,8 @@ if(active && (fall || horizontal_movement != 0)) {
 }
 
 if(rotation_input != 0) {
+	
+	var prev_rotation = rotation;
 	rotation += rotation_input;
 	
 	if(rotation < 0) {
@@ -47,8 +49,22 @@ if(rotation_input != 0) {
 	}
 	
 	grid_update(all_pos, c_white);
-	all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
-	grid_update(all_pos, mino_colour);
+	
+	var off = get_rotation_offset(prev_rotation, rotation);
+	
+	if(off == undefined) {
+		rotation = prev_rotation;
+	} else {
+		grid_pos[0] += off[0];
+		grid_pos[1] += off[1];
+	
+		all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
+		grid_update(all_pos, mino_colour);
+		
+		if(alarm[0] != -1) {
+			alarm[0] = room_speed * 0.5;
+		}
+	}
 	
 	rotation_input = 0;
 }
