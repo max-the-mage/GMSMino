@@ -30,12 +30,19 @@ if(falling) {
 		for(var i = 0; i < 4; i++) {
 			var ya = current_mino.all_pos[i];
 			
-			if(ya[1] > lowest_y) lowest_y = ya[1];
-			if(ya[1] < highest_y) highest_y = ya[1];
+			if(ya[1] > lowest_y) {
+				lowest_y = ya[1];
+			}
+			
+			if(ya[1] < highest_y) {
+				highest_y = ya[1];
+			}
 		}
 		
-		for(var line = lowest_y; line <= highest_y; line++) {
-			lineclear(lowest_y);
+		
+		
+		for(var line = highest_y; line <= lowest_y; line++) {
+			lineclear(line);
 		}
 		
 		current_mino = instance_create_depth(0, 0, 1, obj_tetromino)
