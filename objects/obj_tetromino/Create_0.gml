@@ -24,4 +24,3 @@ horizontal_movement = 0;
 rotation_input = 0;
 
 //show_debug_message(all_pos);
-grid_update(all_pos, mino_colour);

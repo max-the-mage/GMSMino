@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "197f422a-327f-4612-90b4-bdad34944877",
+            "Value": {
+                "id": "8cd41226-501d-4900-bede-754ddbcf87a5",
+                "resourcePath": "scripts\\next_pieces\\next_pieces.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1ccc0971-0883-4db4-bf8b-46cf70464807",
             "Value": {
                 "id": "f23fd6f4-a41a-456b-ab56-cd92892b6028",

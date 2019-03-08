@@ -40,6 +40,20 @@ global.SRS_tests[? "other"] = [[[+0, +0], [+0, +0], [+0, +0], [+0, +0], [+0, +0]
 							   [[+0, +0], [+1, +0], [+1, +1], [+0, -2], [+1, -2]],
 							   [[+0, +0], [+0, +0], [+0, +0], [+0, +0], [+0, +0]],
 							   [[+0, +0], [+1, +0], [+1, +1], [+0, -2], [+1, -2]]];
+
+piece_queue = ds_queue_create();
+
+minos = ds_list_create();
+minos[| 0] = "I";
+minos[| 1] = "O";
+minos[| 2] = "T";
+minos[| 3] = "S";
+minos[| 4] = "Z";
+minos[| 5] = "J";
+minos[| 6] = "L";
+
+next_pieces();
+
 globalvar level;
 globalvar points;
 
@@ -74,6 +88,11 @@ image_xscale = global.grid_scale;
 image_yscale = global.grid_scale;
 
 current_mino = instance_create_depth(0, 0, 1, obj_tetromino)
+
+current_mino.tetromino_type = ds_queue_dequeue(piece_queue);
+current_mino.all_pos = get_relative_minos(current_mino.grid_pos, current_mino.tetromino_type, 0);
+current_mino.mino_colour = global.mino_colours[? current_mino.tetromino_type];
+
 das_left = false;
 das_right = false;
 
