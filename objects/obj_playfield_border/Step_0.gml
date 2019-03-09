@@ -3,7 +3,7 @@
 
 if(das_left) {
 	if(keyboard_check(vk_left)) {
-		alarm[1] = room_speed / 20;
+		alarm[1] = room_speed/20;
 	} else {
 		alarm[1] = -1;
 	}
@@ -12,7 +12,7 @@ if(das_left) {
 
 if(das_right) {
 	if(keyboard_check(vk_right)) {
-		alarm[2] = room_speed / 20
+		alarm[2] = room_speed/20;
 	} else {
 		alarm[2] = -1;
 	}
@@ -47,8 +47,6 @@ if(!current_mino.active) {
 	}
 		
 	global.stack_top = highest_y;
-		
-		
 		
 	for(var line = highest_y; line <= lowest_y; line++) {
 		lineclear(line);
