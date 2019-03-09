@@ -22,5 +22,6 @@ mino_colour = global.mino_colours[? tetromino_type];
 
 horizontal_movement = 0;
 rotation_input = 0;
+ghost_piece = undefined;
 
 //show_debug_message(all_pos);

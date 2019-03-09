@@ -41,6 +41,8 @@ global.SRS_tests[? "other"] = [[[+0, +0], [+0, +0], [+0, +0], [+0, +0], [+0, +0]
 							   [[+0, +0], [+0, +0], [+0, +0], [+0, +0], [+0, +0]],
 							   [[+0, +0], [-1, +0], [-1, +1], [+0, -2], [-1, -2]]];
 
+global.stack_top = 21;
+
 piece_queue = ds_queue_create();
 
 minos = ds_list_create();

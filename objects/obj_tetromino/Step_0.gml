@@ -31,6 +31,7 @@ if(active && (fall || horizontal_movement != 0)) {
 	
 	
 	all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
+	ghost_piece = get_ghost_piece();
 	grid_update(all_pos, mino_colour);
 	
 	fall = false;
@@ -64,6 +65,8 @@ if(rotation_input != 0) {
 		all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
 		alarm[0] = -1;
 	}
+	
+	ghost_piece = get_ghost_piece();
 	grid_update(all_pos, mino_colour);	
 	
 	rotation_input = 0;

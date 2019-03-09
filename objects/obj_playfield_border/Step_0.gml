@@ -39,6 +39,8 @@ if(falling) {
 			}
 		}
 		
+		global.stack_top = highest_y;
+		
 		
 		
 		for(var line = highest_y; line <= lowest_y; line++) {
