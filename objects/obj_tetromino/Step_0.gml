@@ -27,6 +27,10 @@ if(active && (fall || horizontal_movement != 0)) {
 	if((horizontal_movement < 0 && !left_collision) || (horizontal_movement > 0 && !right_collision)) {
 		grid_pos[0] += horizontal_movement;
 		fall_collision = check_collision(all_pos, [0, 1]);
+		
+		if(!fall_collision) {
+			alarm[0] = -1;
+		}
 	}
 	
 	
@@ -70,4 +74,14 @@ if(rotation_input != 0) {
 	grid_update(all_pos, mino_colour);	
 	
 	rotation_input = 0;
+}
+
+if(hard_drop) {
+	grid_update(all_pos, c_white);
+	all_pos = ghost_piece;
+	grid_update(all_pos, mino_colour);
+	
+	hard_drop = false;
+	active = false;
+	
 }

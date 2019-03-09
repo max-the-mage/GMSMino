@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "190adefc-462c-4f58-beb8-d474871f4d0c",
+            "Value": {
+                "id": "f9cefc9d-8aec-41f9-aa50-f4e9c8bd4fb6",
+                "resourcePath": "datafiles_yy\\Goodlight.otf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "197f422a-327f-4612-90b4-bdad34944877",
             "Value": {
                 "id": "8cd41226-501d-4900-bede-754ddbcf87a5",
@@ -239,14 +247,6 @@
             }
         },
         {
-            "Key": "b7f090de-08c7-4e4a-957f-b71c165bfeee",
-            "Value": {
-                "id": "cefeccb4-822b-40c4-afe0-26955120d3a8",
-                "resourcePath": "fonts\\font1\\font1.yy",
-                "resourceType": "GMFont"
-            }
-        },
-        {
             "Key": "b8ddb943-d780-418b-b17b-81e5b6fc5dc0",
             "Value": {
                 "id": "3e04178a-c64b-4493-820d-6c2b4975a7c7",
@@ -276,14 +276,6 @@
                 "id": "79bfba69-0695-4394-af52-2ff0661ab535",
                 "resourcePath": "objects\\obj_playfield_border\\obj_playfield_border.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "dfb8d33e-8157-4532-98a8-a03b2a1f9463",
-            "Value": {
-                "id": "044cda78-50de-4d73-a074-b46fa5be12ed",
-                "resourcePath": "fonts\\level_font\\level_font.yy",
-                "resourceType": "GMFont"
             }
         },
         {

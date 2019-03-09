@@ -34,14 +34,50 @@
                     "mvc": "1.0",
                     "FrameId": "ac1e441a-1d4d-4bdb-82b3-7ea534ed5197",
                     "LayerId": "f257282f-6bf4-427a-b1ee-bdd2bf55226f"
+                },
+                {
+                    "id": "a729d98c-85a7-47c2-aa94-c3e37f92b687",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "ac1e441a-1d4d-4bdb-82b3-7ea534ed5197",
+                    "LayerId": "18d8e5cf-1265-45d8-b704-f84bfa3bcf8a"
+                },
+                {
+                    "id": "bfd730b0-4621-48d7-a7bd-70ecbfe9193f",
+                    "modelName": "GMSpriteImage",
+                    "mvc": "1.0",
+                    "FrameId": "ac1e441a-1d4d-4bdb-82b3-7ea534ed5197",
+                    "LayerId": "1ee1236c-4bd9-4637-8f0a-69d0fcbb2a30"
                 }
             ]
         }
     ],
-    "gridX": 0,
-    "gridY": 0,
+    "gridX": 4,
+    "gridY": 4,
     "height": 64,
     "layers": [
+        {
+            "id": "1ee1236c-4bd9-4637-8f0a-69d0fcbb2a30",
+            "modelName": "GMImageLayer",
+            "mvc": "1.0",
+            "SpriteId": "21f8f717-6a28-4c6b-8270-956d82b5d4eb",
+            "blendMode": 0,
+            "isLocked": false,
+            "name": "Layer 2",
+            "opacity": 100,
+            "visible": true
+        },
+        {
+            "id": "18d8e5cf-1265-45d8-b704-f84bfa3bcf8a",
+            "modelName": "GMImageLayer",
+            "mvc": "1.0",
+            "SpriteId": "21f8f717-6a28-4c6b-8270-956d82b5d4eb",
+            "blendMode": 0,
+            "isLocked": false,
+            "name": "Layer 1",
+            "opacity": 25,
+            "visible": true
+        },
         {
             "id": "f257282f-6bf4-427a-b1ee-bdd2bf55226f",
             "modelName": "GMImageLayer",
@@ -51,7 +87,7 @@
             "isLocked": false,
             "name": "default",
             "opacity": 43,
-            "visible": true
+            "visible": false
         }
     ],
     "origin": 0,

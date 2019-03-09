@@ -24,4 +24,5 @@ horizontal_movement = 0;
 rotation_input = 0;
 ghost_piece = undefined;
 
+hard_drop = false;
 //show_debug_message(all_pos);

@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+
 global.rotation_data = ds_map_create();
 global.rotation_data[? "I"] = [[[+0, +0], [-1, +0], [+1, +0], [2, +0]],
 							   [[+0, +0], [+0, -1], [+0, +1], [+0, 2]],
@@ -81,6 +83,8 @@ global.mino_colours[? "L"] = c_orange;
 
 global.grid_scale = window_get_height() / 1440;
 global.cell_size = global.grid_scale * 64;
+
+global.level_font = font_add("Goodlight.otf", global.cell_size/2, false, false, 32, 128);
 
 global.cell_origin_x = x + (global.cell_size / 4);
 global.cell_origin_y = y + (global.cell_size / 4) - (global.cell_size * 2);
