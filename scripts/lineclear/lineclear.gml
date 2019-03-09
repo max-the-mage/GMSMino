@@ -13,9 +13,10 @@ if(row_sum == 10) {
 	ds_grid_set_grid_region(global.grid, global.grid, 0, 0, 9, row-1, 0, 1);
 	lines+=1;
 	
-	if(lines >= (level * 10) && level != 15) {
+	if(lines >= (level * 10) && level < 13) {
 		level += 1;
+		
+		grav_multiplier = (0.8-((level-1) * 0.007));
+		grav = power(grav_multiplier, level-1);
 	}
-	
-	grav = power(grav_multiplier, level)
 }

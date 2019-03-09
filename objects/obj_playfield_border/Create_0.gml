@@ -62,12 +62,13 @@ globalvar level;
 globalvar lines ;
 globalvar points;
 
-level = 1;
+level = 0;
 lines = 0;
 points = 0;
-grav_multiplier = (0.8-(level * 0.007))
 
-grav = power(grav_multiplier, level)
+grav_multiplier = (0.8-((level-1) * 0.007));
+grav = power(grav_multiplier, level-1);
+
 falling = true;
 soft_drop = false;
 
