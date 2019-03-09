@@ -51,8 +51,7 @@ if(!current_mino.active) {
 	for(var line = highest_y; line <= lowest_y; line++) {
 		lineclear(line);
 	}
-		
-	current_mino = instance_create_depth(0, 0, 1, obj_tetromino)
+	
 	if(ds_queue_size(piece_queue) < 8) {
 		next_pieces();
 	}

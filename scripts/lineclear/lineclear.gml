@@ -16,4 +16,6 @@ if(row_sum == 10) {
 	if(lines >= (level * 10) && level != 15) {
 		level += 1;
 	}
+	
+	grav = power(grav_multiplier, level)
 }
