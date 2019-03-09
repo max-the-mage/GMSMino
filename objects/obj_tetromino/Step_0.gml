@@ -4,14 +4,21 @@
 if(active && (fall || horizontal_movement != 0)) {
 	grid_update(all_pos, c_white);
 	
-	fall_collision = check_collision(all_pos, [0, 1]);
 		
 	// only check left/right collision if horizontal movement is true
+	fall_collision = check_collision(all_pos, [0, 1]);
+	
 	if(horizontal_movement != 0) {
 		right_collision = check_collision(all_pos, [1, 0]);
 		left_collision = check_collision(all_pos, [-1, 0])
 	}
 	
+	if((horizontal_movement < 0 && !left_collision) || (horizontal_movement > 0 && !right_collision)) {
+		grid_pos[0] += horizontal_movement;
+		
+		alarm[0] = -1;
+		
+	}
 	
 	if(fall) {
 		if(fall_collision) {
@@ -23,16 +30,6 @@ if(active && (fall || horizontal_movement != 0)) {
 			alarm[0] = -1;
 		}
 	}
-	
-	if((horizontal_movement < 0 && !left_collision) || (horizontal_movement > 0 && !right_collision)) {
-		grid_pos[0] += horizontal_movement;
-		fall_collision = check_collision(all_pos, [0, 1]);
-		
-		if(!fall_collision) {
-			alarm[0] = -1;
-		}
-	}
-	
 	
 	all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
 	ghost_piece = get_ghost_piece();
