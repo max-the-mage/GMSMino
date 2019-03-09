@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+randomize();
 
 global.rotation_data = ds_map_create();
 global.rotation_data[? "I"] = [[[+0, +0], [-1, +0], [+1, +0], [2, +0]],
