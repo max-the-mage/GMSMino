@@ -2,7 +2,7 @@
 GMSMino is a clone of Tetris made in GMS2, following the tetris guidelines as closely as possible.
 
 ## Download
-Latest release can be found [here.](https://github.com/LiteUnder/GMSMino/releases/tag/v0.2.2)
+Latest release can be found [here.](https://github.com/LiteUnder/GMSMino/releases/latest)
 
 ### Controls
 ```
