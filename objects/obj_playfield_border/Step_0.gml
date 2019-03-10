@@ -3,7 +3,7 @@
 
 if(das_left) {
 	if(keyboard_check(vk_left)) {
-		alarm[1] = room_speed/20;
+		alarm[1] = room_speed/30;
 	} else {
 		alarm[1] = -1;
 	}
@@ -12,7 +12,7 @@ if(das_left) {
 
 if(das_right) {
 	if(keyboard_check(vk_right)) {
-		alarm[2] = room_speed/20;
+		alarm[2] = room_speed/30;
 	} else {
 		alarm[2] = -1;
 	}
@@ -24,10 +24,10 @@ if(falling) {
 	current_mino.fall = true; // move down one cell in grid (if collision does not occur)
 	
 	if(soft_drop) {
-			alarm[0] = room_speed / 30;
-		} else {
-			alarm[0] = room_speed * grav;
-		}
+		alarm[0] = room_speed / 30;
+	} else {
+		alarm[0] = room_speed * grav;
+	}
 	falling = false;
 }
 
