@@ -12,4 +12,7 @@ Rotate CCW - Z
 Rotate CW - X
 Soft Drop - Down Arrow
 Hard Drop - Space
+Hold - C
 ```
+
+Controls will be editable in future versions, but these are fairly standard Tetris controls for now.
