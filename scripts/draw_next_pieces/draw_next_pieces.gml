@@ -13,8 +13,6 @@ if(update_queue) {
 	update_queue = false;
 }
 
-
-
 for(var i = 0; i < 5; i++) {
 	
 	var tetromino = get_relative_minos([0, 0], global.queue[i], 0);

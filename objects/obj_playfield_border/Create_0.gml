@@ -62,7 +62,7 @@ globalvar level;
 globalvar lines ;
 globalvar points;
 
-level = 0;
+level = 1;
 lines = 0;
 points = 0;
 
@@ -71,6 +71,11 @@ grav = power(grav_multiplier, level-1);
 
 falling = true;
 soft_drop = false;
+
+hold = undefined;
+held = false;
+can_hold = true;
+
 global.queue = [];
 
 global.mino_colours = ds_map_create();

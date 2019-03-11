@@ -1,3 +1,5 @@
+randomize()
+
 copy = ds_list_create();
 ds_list_copy(copy, minos);
 
