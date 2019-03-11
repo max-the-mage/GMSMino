@@ -3,6 +3,8 @@
 randomize();
 
 global.rotation_data = ds_map_create();
+
+// All offsets for each mino, with each rotation
 global.rotation_data[? "I"] = [[[+0, +0], [-1, +0], [+1, +0], [2, +0]],
 							   [[+0, +0], [+0, -1], [+0, +1], [+0, 2]],
 							   [[+0, +0], [-1, +0], [+1, +0], [-2, +0]],

@@ -1,4 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Hard drop key
 
 current_mino.hard_drop = true;

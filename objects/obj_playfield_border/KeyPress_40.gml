@@ -1,4 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Begin soft drop
 soft_drop = true;
 falling = true;

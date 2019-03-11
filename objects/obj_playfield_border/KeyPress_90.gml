@@ -1,4 +1,3 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description rotate CCW
 
 current_mino.rotation_input = -1;
