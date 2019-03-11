@@ -1,6 +1,6 @@
 menu_x = x;
 menu_y = y;
-menu_difference = 32;
+menu_difference = font_get_size(menu_font) * 2;
 
 menu_index = 0;
 
