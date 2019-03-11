@@ -1,6 +1,25 @@
 # GMSMino
 GMSMino is a clone of Tetris made in GMS2, following the tetris guidelines as closely as possible.
 
+## Current Features
+* Full SRS rotation
+* Up to level 13 falling speeds
+* 7bag randomizer
+* Hold
+* Next pieces (5)
+
+## Planned features
+* Menus (Main menu, gamemodes, settings)
+* Customizable controls
+* Sound effects and music
+* Framework for building different gamemodes
+* Scoring
+* Customizable sprint mode (default 40L)
+* Marathon mode (level 15 max)
+* Anti stall (15 rotation max)
+* Animations for line clearing and piece placement
+* Replays (maybe)
+
 ## Download
 Latest release can be found [here.](https://github.com/LiteUnder/GMSMino/releases/latest)
 
