@@ -74,13 +74,13 @@ soft_drop = false;
 global.queue = [];
 
 global.mino_colours = ds_map_create();
-global.mino_colours[? "I"] = c_aqua;
-global.mino_colours[? "O"] = c_yellow;
-global.mino_colours[? "T"] = c_purple;
-global.mino_colours[? "S"] = c_green;
-global.mino_colours[? "Z"] = c_red;
-global.mino_colours[? "J"] = c_blue;
-global.mino_colours[? "L"] = c_orange;
+global.mino_colours[? "I"] = make_colour_rgb(0, 255, 255);
+global.mino_colours[? "O"] = make_colour_rgb(255, 255, 0);
+global.mino_colours[? "T"] = make_colour_rgb(167, 35, 255);
+global.mino_colours[? "S"] = make_colour_rgb(0, 255, 0);
+global.mino_colours[? "Z"] = make_colour_rgb(255, 0, 0);
+global.mino_colours[? "J"] = make_colour_rgb(0, 72, 255);
+global.mino_colours[? "L"] = make_colour_rgb(255, 127, 0);
 
 
 global.grid_scale = window_get_height() / 1440;
