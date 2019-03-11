@@ -16,3 +16,12 @@ Hold - C
 ```
 
 Controls will be editable in future versions, but these are fairly standard Tetris controls for now.
+
+
+## Screenshots
+![](https://i.imgur.com/HealH8Q.png)
+![](https://i.imgur.com/i7PBfb4.png)
+![](https://i.imgur.com/6GwvtPM.png)
+Yes, you can T-spin.
+![](https://i.imgur.com/o8iNbNG.png)
+Topping out
