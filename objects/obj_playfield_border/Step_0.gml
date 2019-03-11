@@ -55,6 +55,7 @@ if(!current_mino.active) {
 	if(ds_queue_size(piece_queue) < 8) {
 		next_pieces();
 	}
+	update_queue = true;
 	current_mino = instance_create_depth(0, 0, 1, obj_tetromino);
 
 	current_mino.tetromino_type = ds_queue_dequeue(piece_queue);

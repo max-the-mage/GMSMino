@@ -71,6 +71,7 @@ grav = power(grav_multiplier, level-1);
 
 falling = true;
 soft_drop = false;
+global.queue = [];
 
 global.mino_colours = ds_map_create();
 global.mino_colours[? "I"] = c_aqua;
@@ -96,6 +97,7 @@ ds_grid_clear(global.grid, c_white);
 
 image_xscale = global.grid_scale;
 image_yscale = global.grid_scale;
+update_queue = true;
 
 current_mino = instance_create_depth(0, 0, 1, obj_tetromino)
 

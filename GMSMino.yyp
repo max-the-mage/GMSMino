@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "4d38b626-a3a1-4336-8132-3d696d0289b9",
+            "Value": {
+                "id": "7ce2f4a4-6f85-4197-96ec-c52e75f26498",
+                "resourcePath": "scripts\\draw_next_pieces\\draw_next_pieces.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "4d8f848e-67d5-41ff-89a2-df3d5f98c44e",
             "Value": {
                 "id": "a36b35f6-9d84-45f7-91e8-aac42fa98d81",
@@ -183,6 +191,14 @@
             }
         },
         {
+            "Key": "73380881-30e5-4667-a9be-fadcf3bfcbdd",
+            "Value": {
+                "id": "d1c031fa-909f-4ee6-ba35-8d1ea9ae1285",
+                "resourcePath": "sprites\\spr_next\\spr_next.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7a62d920-0901-44b7-ab59-1e250bfdc02b",
             "Value": {
                 "id": "99ff8cfd-a1ae-46f2-829a-2d938e345a03",
@@ -196,6 +212,14 @@
                 "id": "aa662673-68a0-431c-b1b4-f3c4713b1c75",
                 "resourcePath": "scripts\\draw_grid\\draw_grid.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "9721fadd-7603-413e-8447-fd0e67a32bca",
+            "Value": {
+                "id": "7e3ef080-d82c-4424-9c30-02b2aa4da95f",
+                "resourcePath": "objects\\obj_next\\obj_next.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -320,7 +344,8 @@
         "197f422a-327f-4612-90b4-bdad34944877",
         "51eb1afa-8e90-47ab-8d04-7bf1b14cdd53",
         "f8593279-91b6-4cf2-bdfe-6f376f01511a",
-        "9f7d542c-8d07-4512-8d78-62d53c2743d0"
+        "9f7d542c-8d07-4512-8d78-62d53c2743d0",
+        "4d38b626-a3a1-4336-8132-3d696d0289b9"
     ],
     "tutorial": ""
 }
