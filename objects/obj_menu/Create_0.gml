@@ -13,7 +13,7 @@ button[1] = "Options"
 button[2] = "Exit"
 
 obutton[0] = "Key Bindings";
-obutton[1] = "DAS Tuing";
+obutton[1] = "DAS Tuning";
 obutton[2] = "Back";
 buttons = array_length_1d(button);
 
