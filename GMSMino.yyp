@@ -31,14 +31,6 @@
     },
     "resources": [
         {
-            "Key": "05e3ad6b-b985-421b-91bb-abd82d74b1cb",
-            "Value": {
-                "id": "ef290658-bd5b-4d90-ae46-77a97365dc97",
-                "resourcePath": "fonts\\menu_font\\menu_font.yy",
-                "resourceType": "GMFont"
-            }
-        },
-        {
             "Key": "18f2ea76-f5af-4b80-af95-9462118d0cb4",
             "Value": {
                 "id": "1c7730f5-9963-4789-b40c-10c911ed6058",

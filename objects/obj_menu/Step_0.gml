@@ -4,3 +4,4 @@ menu_index += menu_move;
 
 if(menu_index < 0) menu_index = buttons - 1
 if(menu_index > buttons - 1) menu_index = 0;
+
