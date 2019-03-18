@@ -18,7 +18,7 @@ if(hold != undefined) {
 		}
 		
 		if(!can_hold) {
-			mino_colour = c_white;
+			mino_colour = c_ltgray;
 		}
 		
 		draw_sprite_ext(spr_mino, 0, xpos, ypos, scale, scale, 0, mino_colour, 1);
