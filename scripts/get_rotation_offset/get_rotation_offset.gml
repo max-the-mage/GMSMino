@@ -24,14 +24,14 @@ for(var l = 0; l < 5; l++) {
 	var prev = set[rotation_prev];
 	var new = set[rotation_curr]
 	
-	var offset = new[l];
-	var offset_prev = prev[l];
+	var offset = prev[l];
+	var offset_prev = new[l];
 	
-	offset_prev[0] -= offset[0];
-	offset_prev[1] -= offset[1];
+	offset[0] -= offset_prev[0];
+	offset[1] -= offset_prev[1];
 	
-	if(!check_collision(current, offset_prev)) {
-		return offset_prev;
+	if(!check_collision(current, offset)) {
+		return offset;
 	}
 }
 
