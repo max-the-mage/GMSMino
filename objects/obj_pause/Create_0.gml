@@ -1,6 +1,6 @@
 menu_font = font_add("Goodlight.otf", 42, false, false, 32, 128);
 
-options = false;
+active = false;
 
 menu_x = x;
 menu_y = y;
@@ -8,13 +8,9 @@ menu_difference = font_get_size(menu_font) * 2;
 
 menu_index = 0;
 
-button[0] = "Start Game"
-button[1] = "Options"
-button[2] = "Exit"
-
-obutton[0] = "Key Bindings";
-obutton[1] = "DAS Tuning";
-obutton[2] = "Back";
+button[0] = "Resume"
+button[1] = "Retry"
+button[2] = "Main Menu"
 
 buttons = array_length_1d(button);
 

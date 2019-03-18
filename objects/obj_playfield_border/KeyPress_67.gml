@@ -1,5 +1,5 @@
 /// @description Hold function
-if(can_hold) {
+if(can_hold && !global.pause) {
 	grid_update(current_mino.all_pos, c_white); // remove old mino from screen
 	current_mino.active = false; // for next step iteration
 	

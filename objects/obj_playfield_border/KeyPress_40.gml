@@ -1,3 +1,5 @@
 /// @description Begin soft drop
-soft_drop = true;
-falling = true;
+if(!global.pause) {
+	soft_drop = true;
+	falling = true;
+}

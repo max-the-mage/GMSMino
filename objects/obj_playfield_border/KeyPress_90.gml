@@ -1,3 +1,5 @@
 /// @description rotate CCW
 
-current_mino.rotation_input = -1;
+if(!global.pause) {
+	current_mino.rotation_input = -1;
+}

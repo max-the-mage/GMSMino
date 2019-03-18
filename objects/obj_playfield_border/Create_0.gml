@@ -2,6 +2,8 @@
 // You can write your code in this editor
 randomize();
 
+
+global.pause = false;
 global.rotation_data = ds_map_create();
 
 // All offsets for each mino, with each rotation
@@ -61,7 +63,7 @@ minos[| 6] = "L";
 next_pieces();
 
 globalvar level;
-globalvar lines ;
+globalvar lines;
 globalvar points;
 
 level = 1;
@@ -77,6 +79,7 @@ soft_drop = false;
 hold = undefined;
 held = false;
 can_hold = true;
+refresh = false;
 
 global.queue = [];
 
