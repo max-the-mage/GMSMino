@@ -66,7 +66,7 @@ globalvar level;
 globalvar lines;
 globalvar points;
 
-level = 13;
+level = 1;
 lines = 0;
 points = 0;
 
