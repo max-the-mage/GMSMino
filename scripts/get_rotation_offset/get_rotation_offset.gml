@@ -31,7 +31,7 @@ for(var l = 0; l < 5; l++) {
 	offset[1] -= offset_prev[1];
 	
 	if(!check_collision(current, offset)) {
-		return offset;
+		return offset; 
 	}
 }
 

@@ -15,8 +15,7 @@ all_pos = get_relative_minos(grid_pos, tetromino_type, 0);
 rotation = 0;
 active = true;
 fall_collision = false;
-left_collision = false;
-right_collision = false;
+side_collision = false;
 
 fall = false;
 
