@@ -2,7 +2,6 @@
 // You can write your code in this editor
 randomize();
 
-
 global.pause = false;
 
 
@@ -32,7 +31,6 @@ grav = power(grav_multiplier, level-1);
 
 falling = true;
 soft_drop = false;
-loop = false;
 
 hold = undefined;
 held = false;

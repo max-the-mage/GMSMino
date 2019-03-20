@@ -14,11 +14,17 @@ switch(menu_index) {
 		}
 		break;
 	case 2:
-		room_goto(room_menu);
+		audio_stop_sound(music_loop);
+		audio_stop_sound(music_intro);
 		with(playfield_main) {
-			audio_stop_sound(music_loop);
 			current_mino.active = false;
-			event_perform(ev_create, 0);
 		}
+		
+		level = 1;
+		lines = 0;
+		// TODO: points
+		// points = 0
+		
+		room_goto(room_menu);
 		break;
 }
