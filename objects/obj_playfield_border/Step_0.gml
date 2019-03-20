@@ -63,6 +63,7 @@ if(!global.pause) {
 		var old_mino = current_mino.tetromino_type;
 	
 		update_queue = true;
+		instance_destroy(current_mino);
 		current_mino = instance_create_depth(0, 0, 1, obj_tetromino);
 	
 		if(held) {

@@ -4,50 +4,7 @@ randomize();
 
 
 global.pause = false;
-global.rotation_data = ds_map_create();
 
-// All offsets for each mino, with each rotation
-global.rotation_data[? "I"] = [[[+0, +0], [-1, +0], [+1, +0], [2, +0]],
-							   [[+0, +0], [+0, -1], [+0, +1], [+0, 2]],
-							   [[+0, +0], [-1, +0], [+1, +0], [-2, +0]],
-							   [[+0, +0], [+0, +1], [+0, -1], [+0, -2]]];
-global.rotation_data[? "J"] = [[[+0, +0], [-1, +0], [-1, -1], [+1, +0]],
-							   [[+0, +0], [+0, +1], [+0, -1], [+1, -1]],
-							   [[+0, +0], [-1, +0], [+1, +0], [+1, +1]],
-							   [[+0, +0], [+0, +1], [-1, +1], [+0, -1]]];
-global.rotation_data[? "L"] = [[[+0, +0], [-1, +0], [+1, +0], [+1, -1]],
-							   [[+0, +0], [+0, -1], [+0, +1], [+1, +1]],
-							   [[+0, +0], [-1, +0], [-1, +1], [+1, +0]],
-							   [[+0, +0], [+0, -1], [-1, -1], [+0, +1]]];
-global.rotation_data[? "O"] = [[[+0, +0], [+1, +0], [+0, -1], [+1, -1]],
-							   [[+0, +0], [+1, +0], [+0, +1], [+1, +1]],
-							   [[+0, +0], [-1, +0], [+0, +1], [-1, +1]],
-							   [[+0, +0], [-1, +0], [+0, -1], [-1, -1]]];
-global.rotation_data[? "S"] = [[[+0, +0], [-1, +0], [+0, -1], [+1, -1]],
-							   [[+0, +0], [+0, -1], [+1, +0], [+1, +1]],
-							   [[+0, +0], [+1, +0], [+0, +1], [-1, +1]],
-							   [[+0, +0], [+0, +1], [-1, +0], [-1, -1]]];
-global.rotation_data[? "T"] = [[[+0, +0], [-1, +0], [+1, +0], [+0, -1]],
-							   [[+0, +0], [+0, +1], [+1, +0], [+0, -1]],
-							   [[+0, +0], [+1, +0], [-1, +0], [+0, +1]],
-							   [[+0, +0], [-1, +0], [+0, +1], [+0, -1]]];
-global.rotation_data[? "Z"] = [[[+0, +0], [+0, -1], [-1, -1], [+1, +0]],
-							   [[+0, +0], [+1, +0], [+1, -1], [+0, +1]],
-							   [[+0, +0], [+0, +1], [+1, +1], [-1, +0]],
-							   [[+0, +0], [-1, +0], [-1, +1], [+0, -1]]];
-
-global.SRS_tests = ds_map_create();
-global.SRS_tests[? "I"] = [[[+0, +0], [-1, +0], [+2, +0], [-1, +0], [+2, +0]],
-						   [[-1, +0], [+0, +0], [+0, +0], [+0, -1], [+0, +2]],
-						   [[-1, -1], [+1, -1], [-2, -1], [+1, +0], [-2, +0]],
-						   [[+0, -1], [+0, -1], [+0, -1], [+0, +1], [+0, -2]]];
-global.SRS_tests[? "O"] =  [[0, 0], [0, +1], [-1, +1], [-1, 0]];
-global.SRS_tests[? "other"] = [[[+0, +0], [+0, +0], [+0, +0], [+0, +0], [+0, +0]],
-							   [[+0, +0], [+1, +0], [+1, +1], [+0, -2], [+1, -2]],
-							   [[+0, +0], [+0, +0], [+0, +0], [+0, +0], [+0, +0]],
-							   [[+0, +0], [-1, +0], [-1, +1], [+0, -2], [-1, -2]]];
-
-global.stack_top = 21;
 
 piece_queue = ds_queue_create();
 
@@ -84,16 +41,6 @@ refresh = false;
 
 global.queue = [];
 
-global.mino_colours = ds_map_create();
-global.mino_colours[? "I"] = make_colour_rgb(0, 255, 255);
-global.mino_colours[? "O"] = make_colour_rgb(255, 255, 0);
-global.mino_colours[? "T"] = make_colour_rgb(167, 35, 255);
-global.mino_colours[? "S"] = make_colour_rgb(0, 255, 0);
-global.mino_colours[? "Z"] = make_colour_rgb(255, 0, 0);
-global.mino_colours[? "J"] = make_colour_rgb(0, 72, 255);
-global.mino_colours[? "L"] = make_colour_rgb(255, 127, 0);
-
-
 global.grid_scale = window_get_height() / 1440;
 global.cell_size = global.grid_scale * 64;
 
@@ -102,7 +49,6 @@ global.level_font = font_add("Goodlight.otf", global.cell_size/2, false, false, 
 global.cell_origin_x = x + (global.cell_size / 4);
 global.cell_origin_y = y + (global.cell_size / 4) - (global.cell_size * 2);
 
-global.grid = ds_grid_create(10, 22);
 ds_grid_clear(global.grid, c_white);
 
 

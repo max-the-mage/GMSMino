@@ -79,7 +79,6 @@ if(!global.pause) {
 	
 			hard_drop = false;
 			active = false;
-	
 		}
 	}
 }

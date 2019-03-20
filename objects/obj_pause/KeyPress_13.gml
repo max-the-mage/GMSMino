@@ -9,6 +9,7 @@ switch(menu_index) {
 		global.pause = false;
 		with(playfield_main) {
 			current_mino.active = false;
+			instance_destroy(current_mino);
 			event_perform(ev_create, 0);
 		}
 		break;
