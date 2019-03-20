@@ -2,6 +2,7 @@
 // You can write your code in this editor
 grid_pos = [4, 1];
 ghost_sprite = undefined;
+on_stack = false;
 
 
 //x = global.cell_origin_x + (grid_pos[1] * global.cell_size);

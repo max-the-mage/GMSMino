@@ -49,10 +49,15 @@ if(!global.pause) {
 			fall_collision = check_collision(all_pos, [0, 1]);
 			
 			if(fall_collision) {
+				
 				if(alarm[0] == -1) {
 					alarm[0] = room_speed * 0.5;
 				}
+				if(!on_stack) audio_play_sound(snd_stackhit, 0, false);
+				
+				on_stack = true;
 			} else {
+				on_stack = false;
 				grid_pos[1] += 1;
 				alarm[0] = -1;
 			}
