@@ -9,6 +9,7 @@ if(options) {
 		case 0:
 			draw_set_halign(fa_left);
 			room_goto(room_play);
+			audio_play_sound(music_intro, 10, false);
 			break;
 		case 1:
 			options = true;

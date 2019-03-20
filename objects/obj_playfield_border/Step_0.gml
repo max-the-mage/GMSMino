@@ -1,4 +1,8 @@
 /// @description tetromino controls
+if(!audio_is_playing(music_intro) && !loop) {
+	audio_play_sound(music_loop, 5, true);
+	loop = true;
+}
 
 if(!global.pause) {
 	if(das_left) {
