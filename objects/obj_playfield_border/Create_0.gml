@@ -18,10 +18,6 @@ minos[| 6] = "L";
 
 next_pieces();
 
-globalvar level;
-globalvar lines;
-globalvar points;
-
 level = 1;
 lines = 0;
 points = 0;

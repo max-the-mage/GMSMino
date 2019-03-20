@@ -55,3 +55,7 @@ global.mino_colours[? "J"] = make_colour_rgb(0, 72, 255);
 global.mino_colours[? "L"] = make_colour_rgb(255, 127, 0);
 
 global.grid = ds_grid_create(10, 22);
+
+globalvar level;
+globalvar lines;
+globalvar points;

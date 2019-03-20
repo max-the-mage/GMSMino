@@ -20,11 +20,6 @@ switch(menu_index) {
 			current_mino.active = false;
 		}
 		
-		level = 1;
-		lines = 0;
-		// TODO: points
-		// points = 0
-		
 		room_goto(room_menu);
 		break;
 }
