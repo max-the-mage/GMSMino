@@ -5,11 +5,10 @@ menu_difference = font_get_size(global.menu_font) * 2;
 
 menu_index = 0;
 
-button[0] = "DAS tuning (coming soon)";
-button[1] = "Controls";
-button[2] = "Music Volume: " + string(global.music_vol);
-button[3] = "SFX Volume: " + string(global.sfx_vol);
-button[4] = "Save & Exit";
+button[0] = "Controls";
+button[1] = "Music Volume: " + string(global.music_vol);
+button[2] = "SFX Volume: " + string(global.sfx_vol);
+button[3] = "Save & Exit";
 
 buttons = array_length_1d(button);
 
