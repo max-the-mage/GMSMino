@@ -1,8 +1,8 @@
-global.menu_font = font_add("Goodlight.otf", 42, false, false, 32, 128);
+global.menu_font = font_add("Potra.ttf", 75, false, false, 32, 128);
 
 menu_x = x;
 menu_y = y;
-menu_difference = font_get_size(global.menu_font) * 2;
+menu_difference = font_get_size(global.menu_font) * 1.2;
 
 menu_index = 0;
 

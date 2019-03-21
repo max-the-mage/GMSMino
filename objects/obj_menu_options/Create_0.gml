@@ -1,7 +1,7 @@
 menu_x = x;
 menu_y = y;
 
-menu_difference = font_get_size(global.menu_font) * 2;
+menu_difference = font_get_size(global.menu_font) * 1.2;
 
 menu_index = 0;
 

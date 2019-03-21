@@ -311,14 +311,6 @@
             }
         },
         {
-            "Key": "784de141-6f68-4af5-922a-c0e6edd97cae",
-            "Value": {
-                "id": "6c55c0c0-3cdc-4616-be37-81fc555354f7",
-                "resourcePath": "objects\\obj_hold\\obj_hold.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "7a62d920-0901-44b7-ab59-1e250bfdc02b",
             "Value": {
                 "id": "99ff8cfd-a1ae-46f2-829a-2d938e345a03",
@@ -359,11 +351,11 @@
             }
         },
         {
-            "Key": "9721fadd-7603-413e-8447-fd0e67a32bca",
+            "Key": "91ededda-5d11-41f2-a279-961bf2b01c0c",
             "Value": {
-                "id": "7e3ef080-d82c-4424-9c30-02b2aa4da95f",
-                "resourcePath": "objects\\obj_next\\obj_next.yy",
-                "resourceType": "GMObject"
+                "id": "40a0847b-746d-43e4-a7fa-4e535f10a381",
+                "resourcePath": "datafiles_yy\\Potra.ttf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -452,14 +444,6 @@
                 "id": "aacfa339-d5d9-4d86-a559-d35f2b43a456",
                 "resourcePath": "sounds\\snd_holdfail\\snd_holdfail.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "c545c146-9e02-48f7-b643-406f35cab2fb",
-            "Value": {
-                "id": "afa1a4ee-ba0f-4e2e-9058-4af9b1b20999",
-                "resourcePath": "objects\\obj_grid\\obj_grid.yy",
-                "resourceType": "GMObject"
             }
         },
         {

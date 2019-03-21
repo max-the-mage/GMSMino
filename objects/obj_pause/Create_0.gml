@@ -1,4 +1,4 @@
-menu_font = font_add("Goodlight.otf", 42, false, false, 32, 128);
+menu_font = font_add("Potra.ttf", 42, false, false, 32, 128);
 
 active = false;
 lowest = 0
