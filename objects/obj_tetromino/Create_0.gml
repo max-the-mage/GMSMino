@@ -23,8 +23,11 @@ rotation_input = 0;
 ghost_piece = undefined;
 
 if(check_collision(all_pos, [0, 0]) && !global.fail) {
+	audio_play_sound(snd_gameover, 5, false);
+	
 	global.fail = true;
 	global.pause = true;
+	
 	active = false;
 	pause_menu.active = true;
 }
