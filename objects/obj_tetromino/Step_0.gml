@@ -36,30 +36,34 @@ if(!global.pause) {
 		if(horizontal_movement != 0) {
 			side_collision = check_collision(all_pos, [horizontal_movement, 0]);
 				
-		if(!side_collision) {
-			grid_pos[0] += horizontal_movement;
-			all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
-				alarm[0] = -1;
+			if(!side_collision) {
+				grid_pos[0] += horizontal_movement;
+				all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
 			}
 				
 			horizontal_movement = 0;
 		}
 		
+		fall_collision = check_collision(all_pos, [0, 1]);
+		
+		if(!fall_collision) {
+			alarm[0] = -1;
+		}
+		
 		if(fall) {
-			fall_collision = check_collision(all_pos, [0, 1]);
-			
+
 			if(fall_collision) {
 				
 				if(alarm[0] == -1) {
 					alarm[0] = room_speed * 0.5;
 				}
+				
 				if(!on_stack) audio_play_sound(snd_stackhit, 0, false);
 				
 				on_stack = true;
 			} else {
 				on_stack = false;
 				grid_pos[1] += 1;
-				alarm[0] = -1;
 			}
 			all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
 			fall = false;
