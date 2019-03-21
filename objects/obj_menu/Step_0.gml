@@ -1,5 +1,5 @@
-menu_move = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 
+menu_move = keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
 menu_index += menu_move;
 
 if(menu_index < 0) menu_index = buttons - 1
