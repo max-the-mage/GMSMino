@@ -1,3 +1,5 @@
+audio_play_sound(snd_menu_choose, 0, false);
+
 if(options) {
 	switch(menu_index) {
 		case 2:

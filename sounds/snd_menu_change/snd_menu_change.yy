@@ -1,14 +1,14 @@
 {
-    "id": "ef06fc75-c078-4843-a7ce-a57f426c6f2b",
+    "id": "c9aa4bd7-524e-4a6f-986f-f2626cb7473a",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "music_loop",
-    "audioGroupGuid": "18703179-01b2-4033-bca1-b87608f72638",
+    "name": "snd_menu_change",
+    "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,
     "kind": 0,
     "preload": false,
     "sampleRate": 44100,
-    "type": 1,
+    "type": 0,
     "volume": 1
 }
