@@ -22,5 +22,11 @@ horizontal_movement = 0;
 rotation_input = 0;
 ghost_piece = undefined;
 
+if(check_collision(all_pos, [0, 0]) && !global.fail) {
+	global.fail = true;
+	global.pause = true;
+	active = false;
+	pause_menu.active = true;
+}
+
 hard_drop = false;
-//show_debug_message(all_pos);

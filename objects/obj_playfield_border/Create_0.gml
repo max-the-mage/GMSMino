@@ -3,7 +3,7 @@
 randomize();
 
 global.pause = false;
-
+global.fail = false;
 
 piece_queue = ds_queue_create();
 

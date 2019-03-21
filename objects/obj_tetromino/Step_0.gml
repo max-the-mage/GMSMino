@@ -4,7 +4,9 @@
 
 if(!global.pause) {
 	if(active) {
+		
 		grid_update(all_pos, c_white);
+		
 		if(rotation_input != 0) {
 		
 			var prev_rotation = rotation;

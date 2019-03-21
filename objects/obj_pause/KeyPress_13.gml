@@ -3,8 +3,10 @@ if(active) {
 
 	switch(menu_index) {
 		case 0:
-			active = false;
-			global.pause = false;
+			if(!global.fail) {
+				active = false;
+				global.pause = false;
+			}
 			break;
 		case 1:
 			active = false;
