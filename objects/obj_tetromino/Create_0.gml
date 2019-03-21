@@ -4,10 +4,6 @@ grid_pos = [4, 1];
 ghost_sprite = undefined;
 on_stack = false;
 
-
-//x = global.cell_origin_x + (grid_pos[1] * global.cell_size);
-//y = global.cell_origin_y + (grid_pos[0] * global.cell_size);
- 
 image_xscale = global.grid_scale;
 image_yscale = global.grid_scale;
 

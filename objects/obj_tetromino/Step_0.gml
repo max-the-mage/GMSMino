@@ -20,9 +20,12 @@ if(!global.pause) {
 	
 			if(off == undefined) {
 				rotation = prev_rotation;
+				audio_play_sound(snd_rotate_fail, 0, false);
 			} else {
 				grid_pos[0] += off[0];
 				grid_pos[1] += off[1];
+				
+				audio_play_sound(snd_rotate, 0, false);
 		
 				alarm[0] = -1;
 			}
@@ -37,6 +40,8 @@ if(!global.pause) {
 			side_collision = check_collision(all_pos, [horizontal_movement, 0]);
 				
 		if(!side_collision) {
+			audio_play_sound(snd_move, 0, false);
+			
 			grid_pos[0] += horizontal_movement;
 			all_pos = get_relative_minos(grid_pos, tetromino_type, rotation);
 				alarm[0] = -1;
