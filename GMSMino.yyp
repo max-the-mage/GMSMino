@@ -407,11 +407,27 @@
             }
         },
         {
+            "Key": "bea24b87-fb53-44bd-bd62-296d640d0d1d",
+            "Value": {
+                "id": "2ee0f922-d29b-45b8-9e47-51a388848a69",
+                "resourcePath": "sprites\\spr_grid\\spr_grid.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c2ad29a6-dc85-4622-9418-ff8b4ff750d1",
             "Value": {
                 "id": "aacfa339-d5d9-4d86-a559-d35f2b43a456",
                 "resourcePath": "sounds\\snd_holdfail\\snd_holdfail.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "c545c146-9e02-48f7-b643-406f35cab2fb",
+            "Value": {
+                "id": "afa1a4ee-ba0f-4e2e-9058-4af9b1b20999",
+                "resourcePath": "objects\\obj_grid\\obj_grid.yy",
+                "resourceType": "GMObject"
             }
         },
         {
