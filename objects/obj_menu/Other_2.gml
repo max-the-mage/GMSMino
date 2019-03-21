@@ -1,13 +1,21 @@
 /// @description initialize global variables
 
 global.rotation_data = ds_map_create();
+global.controls = ds_map_create();
 
 ini_open("settings.ini");
+
 global.sfx_vol = ini_read_real("audio", "sfx", 8);
 global.music_vol = ini_read_real("audio", "music", 10);
-ini_close();
-audio_group_load(audiogroup_music);
 
+global.controls[? "hold"] = ini_read_real("controls", "hold", ord("C"));
+global.controls[? "ccw"] = ini_read_real("controls", "ccw", ord("Z"));
+global.controls[? "cw"] = ini_read_real("controls", "cw", ord("X"));
+global.controls[? "harddrop"] = ini_read_real("controls", "harddrop", vk_space);
+
+ini_close();
+
+audio_group_load(audiogroup_music);
 audio_group_set_gain(audiogroup_music, global.music_vol * .1, 0);
 audio_group_set_gain(audiogroup_default, global.sfx_vol * .1, 0);
 
@@ -62,6 +70,9 @@ global.mino_colours[? "S"] = make_colour_rgb(0, 255, 0);
 global.mino_colours[? "Z"] = make_colour_rgb(255, 0, 0);
 global.mino_colours[? "J"] = make_colour_rgb(0, 72, 255);
 global.mino_colours[? "L"] = make_colour_rgb(255, 127, 0);
+
+
+
 
 global.grid = ds_grid_create(10, 22);
 
