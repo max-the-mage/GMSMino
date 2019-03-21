@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "866fbac7-85fd-4b01-8e84-15f74f220b3a",
+            "Value": {
+                "id": "ed0f6531-2c1b-4a57-acc1-074315509c37",
+                "resourcePath": "scripts\\draw_lock_piece\\draw_lock_piece.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "916a5c5e-4c3a-4bf4-99e1-8448c604aab4",
             "Value": {
                 "id": "688470d7-c37e-42d3-9655-2659cfed789a",
@@ -380,6 +388,14 @@
                 "id": "90d3b151-fe95-45ba-9d5c-df875880cee4",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a9f3e936-671d-4389-9e21-afeee7843de8",
+            "Value": {
+                "id": "ad27f4ed-78e4-4c19-ac89-94fd95c7d531",
+                "resourcePath": "sprites\\spr_lock\\spr_lock.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -554,7 +570,8 @@
         "f8593279-91b6-4cf2-bdfe-6f376f01511a",
         "9f7d542c-8d07-4512-8d78-62d53c2743d0",
         "4d38b626-a3a1-4336-8132-3d696d0289b9",
-        "a0974775-bc63-401f-b6d1-bf545d132382"
+        "a0974775-bc63-401f-b6d1-bf545d132382",
+        "866fbac7-85fd-4b01-8e84-15f74f220b3a"
     ],
     "tutorial": ""
 }

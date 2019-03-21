@@ -10,9 +10,11 @@ image_yscale = global.grid_scale;
 tetromino_type = "I";
 all_pos = get_relative_minos(grid_pos, tetromino_type, 0);
 rotation = 0;
+stalls = 0;
 active = true;
 fall_collision = false;
 side_collision = false;
+cells_since_stall = 0;
 
 fall = false;
 
