@@ -1,6 +1,7 @@
 menu_font = font_add("Goodlight.otf", 42, false, false, 32, 128);
 
 active = false;
+lowest = 0
 
 menu_x = x;
 menu_y = y;

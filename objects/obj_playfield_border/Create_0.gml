@@ -2,9 +2,8 @@
 // You can write your code in this editor
 randomize();
 
-
 global.pause = false;
-
+global.fail = false;
 
 piece_queue = ds_queue_create();
 
@@ -19,10 +18,6 @@ minos[| 6] = "L";
 
 next_pieces();
 
-globalvar level;
-globalvar lines;
-globalvar points;
-
 level = 1;
 lines = 0;
 points = 0;
@@ -32,7 +27,6 @@ grav = power(grav_multiplier, level-1);
 
 falling = true;
 soft_drop = false;
-loop = false;
 
 hold = undefined;
 held = false;

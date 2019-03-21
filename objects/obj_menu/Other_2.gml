@@ -2,6 +2,15 @@
 
 global.rotation_data = ds_map_create();
 
+ini_open("settings.ini");
+global.sfx_vol = ini_read_real("audio", "sfx", 8);
+global.music_vol = ini_read_real("audio", "music", 10);
+ini_close();
+audio_group_load(audiogroup_music);
+
+audio_group_set_gain(audiogroup_music, global.music_vol * .1, 0);
+audio_group_set_gain(audiogroup_default, global.sfx_vol * .1, 0);
+
 // All offsets for each mino, with each rotation
 global.rotation_data[? "I"] = [[[+0, +0], [-1, +0], [+1, +0], [2, +0]],
 							   [[+0, +0], [+0, -1], [+0, +1], [+0, 2]],
@@ -55,3 +64,8 @@ global.mino_colours[? "J"] = make_colour_rgb(0, 72, 255);
 global.mino_colours[? "L"] = make_colour_rgb(255, 127, 0);
 
 global.grid = ds_grid_create(10, 22);
+
+globalvar level;
+globalvar lines;
+globalvar points;
+
