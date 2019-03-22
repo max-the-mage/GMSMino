@@ -47,14 +47,6 @@
             }
         },
         {
-            "Key": "190adefc-462c-4f58-beb8-d474871f4d0c",
-            "Value": {
-                "id": "f9cefc9d-8aec-41f9-aa50-f4e9c8bd4fb6",
-                "resourcePath": "datafiles_yy\\Goodlight.otf.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "197f422a-327f-4612-90b4-bdad34944877",
             "Value": {
                 "id": "8cd41226-501d-4900-bede-754ddbcf87a5",
@@ -356,14 +348,6 @@
                 "id": "688470d7-c37e-42d3-9655-2659cfed789a",
                 "resourcePath": "sounds\\snd_levelup\\snd_levelup.yy",
                 "resourceType": "GMSound"
-            }
-        },
-        {
-            "Key": "91ededda-5d11-41f2-a279-961bf2b01c0c",
-            "Value": {
-                "id": "40a0847b-746d-43e4-a7fa-4e535f10a381",
-                "resourcePath": "datafiles_yy\\Potra.ttf.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
