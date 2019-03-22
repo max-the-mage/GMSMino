@@ -4,6 +4,7 @@ GMSMino is a clone of Tetris made in GMS2, following the tetris guidelines as cl
 ## Current Features
 * Main menu
 * Options menu
+* Customizable controls
 * Game over detection
 * Sound effects & music
 * Full SRS rotation
@@ -11,22 +12,21 @@ GMSMino is a clone of Tetris made in GMS2, following the tetris guidelines as cl
 * 7bag randomizer
 * Hold
 * Next pieces (5)
+* Anti stall (15 rotation max)
 
 ## Planned features
-* Customizable controls
 * (more) Sound effects and music
 * Framework for building different gamemodes
 * Scoring
 * Customizable sprint mode (default 40L)
 * Marathon mode (level 15 max)
-* Anti stall (15 rotation max)
 * Animations for line clearing and piece placement
 * Replays (maybe)
 
 # Download
 Latest release can be found [here.](https://github.com/LiteUnder/GMSMino/releases/latest) The exe and zip are basically the same, but the exe is an installer and the zip is just what is installed when using the installer. 
 
-### Controls
+### Default Controls
 ```
 Right - Right Arrow
 Left - Left Arrow
@@ -43,10 +43,12 @@ Controls will be editable in future versions, but these are fairly standard Tetr
 
 ## Screenshots
 Main Menu
-![](https://i.imgur.com/KR9Tb0y.png)
+![](https://i.imgur.com/PDsqjyj.png)
 Options
-![](https://i.imgur.com/Jsu88aI.png)
+![](https://i.imgur.com/s16EpA7.png)
+Controls
+![](https://i.imgur.com/XDefIeS.png)
 Gameplay
-![](https://i.imgur.com/rbtSTTJ.png)
+![](https://i.imgur.com/oH8WfTE.png)
 Game over
-![](https://i.imgur.com/w3bAx3F.png)
+![](https://i.imgur.com/ZjOsoeo.png)
