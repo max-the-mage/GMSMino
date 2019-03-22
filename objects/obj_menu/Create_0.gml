@@ -1,4 +1,4 @@
-global.menu_font = font_add("Potra.ttf", 75, false, false, 32, 128);
+global.menu_font = font_add("VCR_OSD_MONO_1.001.ttf", 60, false, false, 32, 128);
 
 menu_x = x;
 menu_y = y;

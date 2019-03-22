@@ -1,11 +1,11 @@
-menu_font = font_add("Potra.ttf", 42, false, false, 32, 128);
+menu_font = font_add("VCR_OSD_MONO_1.001.ttf", 50, false, false, 32, 128);
 
 active = false;
 lowest = 0
 
 menu_x = x;
 menu_y = y;
-menu_difference = font_get_size(menu_font) * 2;
+menu_difference = font_get_size(menu_font) * 1.8;
 
 menu_index = 0;
 

@@ -35,11 +35,6 @@ refresh = false;
 
 global.queue = [];
 
-global.grid_scale = window_get_height() / 1440;
-global.cell_size = global.grid_scale * 64;
-
-global.level_font = font_add("Goodlight.otf", global.cell_size/2, false, false, 32, 128);
-
 global.cell_origin_x = x + (global.cell_size / 4);
 global.cell_origin_y = y + (global.cell_size / 4) - (global.cell_size * 2);
 

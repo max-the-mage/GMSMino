@@ -24,6 +24,11 @@ audio_group_load(audiogroup_music);
 audio_group_set_gain(audiogroup_music, global.music_vol * .1, 0);
 audio_group_set_gain(audiogroup_default, global.sfx_vol * .1, 0);
 
+global.grid_scale = window_get_height() / 1440;
+global.cell_size = global.grid_scale * 64;
+
+global.level_font = font_add("VCR_OSD_MONO_1.001.ttf", global.cell_size * .75, false, false, 32, 128);
+
 // All offsets for each mino, with each rotation
 global.rotation_data[? "I"] = [[[+0, +0], [-1, +0], [+1, +0], [2, +0]],
 							   [[+0, +0], [+0, -1], [+0, +1], [+0, 2]],

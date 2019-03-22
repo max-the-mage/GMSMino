@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "2a9a423c-265e-46c8-ae3d-765a718244d1",
+            "Value": {
+                "id": "2a5da5d6-2ca4-401a-a006-b02edc3d08e4",
+                "resourcePath": "sprites\\logo\\logo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2e6da567-e228-48b9-ae2c-8e131bc5b061",
             "Value": {
                 "id": "52be7fd4-7b04-4041-ad96-d90ba32581a7",
@@ -492,6 +500,14 @@
                 "id": "ace10cff-bf61-438a-bfba-f0b5461ee5ed",
                 "resourcePath": "sounds\\snd_menu_choose\\snd_menu_choose.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "dd7100f7-8eef-4f3d-ac77-a36b885a522e",
+            "Value": {
+                "id": "aca57e01-6c78-4228-b1b0-f5ab1482b71f",
+                "resourcePath": "datafiles_yy\\VCR_OSD_MONO_1.001.ttf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
