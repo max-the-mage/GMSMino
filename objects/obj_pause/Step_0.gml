@@ -4,6 +4,7 @@ if(active) {
 	menu_index += menu_move;
 	
 	if(global.fail && lowest != 1) lowest = 1;
+	else if(lowest != 0) lowest = 0;
 	
 	if(menu_index < lowest) menu_index = buttons - 1
 	if(menu_index > buttons - 1) menu_index = lowest;
