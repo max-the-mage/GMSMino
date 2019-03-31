@@ -2,3 +2,4 @@
 
 audio_play_sound(snd_lock, 0, false);
 active = false;
+placed = true;

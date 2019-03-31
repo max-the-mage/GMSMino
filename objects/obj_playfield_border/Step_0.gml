@@ -38,17 +38,17 @@ if(!global.pause) {
 		var lowest_y = 0;
 		var highest_y = 21;
 		for(var i = 0; i < 4; i++) {
-			var ya = current_mino.all_pos[i];
+			var mino = current_mino.all_pos[i];
 			
-			if(ya[1] > lowest_y) {
-				lowest_y = ya[1];
+			if(mino[1] > lowest_y) {
+				lowest_y = mino[1];
 			}
 			
-			if(ya[1] < highest_y) {
-				highest_y = ya[1];
+			if(mino[1] < highest_y) {
+				highest_y = mino[1];
 			}
 			
-			if(ya[1] < 1) {
+			if(mino[1] < 2 && current_mino.placed) {
 				audio_play_sound(snd_gameover, 5, false);
 	
 				global.fail = true;
@@ -64,8 +64,6 @@ if(!global.pause) {
 			for(var line = highest_y; line <= lowest_y; line++) {
 				lineclear(line);
 			}
-	
-			
 		
 			var old_mino = current_mino.tetromino_type;
 	

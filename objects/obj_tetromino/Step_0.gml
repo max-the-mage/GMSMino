@@ -84,12 +84,10 @@ if(!global.pause) {
 				
 				if(on_stack) {
 					alarm[0] = room_speed * 0.5;
-					stalls += 1;
-					
+					stalls += 1;	
 				}
-				
 			}
-				
+			
 			horizontal_movement = 0;
 		}
 		
@@ -103,6 +101,7 @@ if(!global.pause) {
 			grid_update(all_pos, mino_colour);
 	
 			hard_drop = false;
+			placed = true;
 			active = false;
 		}
 	}
