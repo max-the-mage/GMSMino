@@ -23,8 +23,8 @@ GMSMino is a clone of Tetris made in GMS2, following the tetris guidelines as cl
 * Animations for line clearing and piece placement
 * Replays (maybe)
 
-# Download
-Latest release can be found [here.](https://github.com/LiteUnder/GMSMino/releases/latest) The exe and zip are basically the same, but the exe is an installer and the zip is just what is installed when using the installer. 
+# [Downloads](https://github.com/LiteUnder/GMSMino/releases/latest)
+Click the link above to download the latest version
 
 ### Default Controls
 ```
