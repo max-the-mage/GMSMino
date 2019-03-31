@@ -1,5 +1,5 @@
 /// @description start right movement
-// You can write your code in this editor
+
 if(!global.pause) {
 	current_mino.horizontal_movement = 1;
 	alarm[1] = -1 // disables opposite DAS

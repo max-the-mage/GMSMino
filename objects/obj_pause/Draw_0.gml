@@ -1,9 +1,7 @@
 if(active) {
-
 	var i = 0;
-	var current_text;
 	repeat(buttons) {
-		draw_set_font(menu_font);
+		draw_set_font(global.menu_font);
 		draw_set_color(c_white);
 		
 		if(global.fail && i == 0)

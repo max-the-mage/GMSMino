@@ -1,13 +1,12 @@
 /// @description Insert description here
-// You can write your code in this editor
+
 grid_pos = [4, 1];
-ghost_sprite = undefined;
 on_stack = false;
 
 image_xscale = global.grid_scale;
 image_yscale = global.grid_scale;
 
-tetromino_type = "I";
+tetromino_type = "I"; // there is no such thing as constructor parameters in gml, so this will have to do
 all_pos = get_relative_minos(grid_pos, tetromino_type, 0);
 rotation = 0;
 stalls = 0;

@@ -1,10 +1,7 @@
-randomize()
+// randomize() randomizes seed every time pieces are generated, probably not needed
 
-copy = ds_list_create();
-ds_list_copy(copy, minos);
+ds_list_shuffle(global.minos);
 
-ds_list_shuffle(copy)
-
-for(var i = 0; i < ds_list_size(copy); i++) {
-	ds_queue_enqueue(piece_queue, copy[| i]);
+for(var i = 0; i < ds_list_size(global.minos); i++) {
+	ds_queue_enqueue(global.queue, global.minos[| i]);
 }

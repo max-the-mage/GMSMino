@@ -1,4 +1,4 @@
-/// @description Draw text
+/// @description Draw onscreen text
 
 draw_set_colour(c_white);
 draw_set_font(global.level_font);

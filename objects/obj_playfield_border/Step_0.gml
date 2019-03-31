@@ -65,9 +65,7 @@ if(!global.pause) {
 				lineclear(line);
 			}
 	
-			if(ds_queue_size(piece_queue) < 8) {
-				next_pieces();
-			}
+			
 		
 			var old_mino = current_mino.tetromino_type;
 	
@@ -80,19 +78,23 @@ if(!global.pause) {
 					current_mino.tetromino_type = hold;
 					can_hold = false;
 				} else {
-					current_mino.tetromino_type = ds_queue_dequeue(piece_queue);
+					current_mino.tetromino_type = ds_queue_dequeue(global.queue);
 					can_hold = true;
 				}
 				hold = old_mino;
 				held = false;
 			} else {
 				can_hold = true;
-				current_mino.tetromino_type = ds_queue_dequeue(piece_queue);
+				current_mino.tetromino_type = ds_queue_dequeue(global.queue);
 			}
 			current_mino.all_pos = get_relative_minos(current_mino.grid_pos, current_mino.tetromino_type, 0);
 			current_mino.mino_colour = global.mino_colours[? current_mino.tetromino_type];
 	
 			falling = true;
+		}
+		
+		if(ds_queue_size(global.queue) < 8) {
+			next_pieces();
 		}
 	}
 }

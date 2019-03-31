@@ -1,8 +1,6 @@
 var row = argument0;
-
 var row_sum = 0;
 
-	
 for(var xx = 0; xx < 10; xx++) {
 	if(ds_grid_get(global.grid, xx, row) != c_white) {
 		row_sum++;
